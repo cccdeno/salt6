@@ -1,4 +1,4 @@
-import * as salt6 from '../mod.ts';
+import * as salt6 from 'https://deno.land/x/salt6/mod.ts';
 
 function signup(password) {
   const salt = salt6.genSalt()

@@ -3,7 +3,7 @@
 ## Example
 
 ```js
-import * as salt6 from '../mod.ts';
+import * as salt6 from 'https://deno.land/x/salt6/mod.ts';
 
 function signup(password) {
   const salt = salt6.genSalt()
@@ -26,14 +26,14 @@ if (login(input, salt, hash)) {
 } else {
   console.log('login fail!')
 }
-
 ```
 
 ## Run
 
 ```
-(base) $ deno run salt1.js ccc
-login fail!
-(base) $ deno run salt1.js csienqu123
+$ deno run salt1.js csienqu123
 login success!
+
+$ deno run salt1.js csienqu12
+login fail!
 ```
